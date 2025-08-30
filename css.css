@@ -1,0 +1,30 @@
+:root{
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --accent:#2b6cb0;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+body{
+  font-family:Inter,system-ui,Segoe UI,Roboto,Arial;
+  margin:0;
+  background:var(--bg);
+  color:#111;
+}
+.container{max-width:960px;margin:20px auto;padding:16px}
+header h1{margin:0 0 12px 0}
+main{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+section{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(11,22,45,0.05)}
+label{display:block;margin-bottom:8px;font-size:14px}
+input,textarea{width:100%;padding:8px;border-radius:6px;border:1px solid #ddd}
+.actions{display:flex;gap:8px;margin-top:8px}
+button{padding:8px 12px;border-radius:8px;border:0;background:var(--accent);color:white;cursor:pointer}
+button#resetBtn{background:#999}
+.notes-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin-top:10px}
+.note-card{padding:10px;border-radius:8px;border:1px solid #eee;background:#fff}
+.note-card h3{margin:0 0 8px 0;font-size:16px}
+.note-card p{margin:0 0 8px 0;color:var(--muted);font-size:13px}
+.note-actions{display:flex;gap:8px;justify-content:flex-end}
+.note-actions button{background:#eee;color:#111;padding:6px 8px;border-radius:6px}
+small{color:var(--muted)}
+footer{margin-top:14px;text-align:center}

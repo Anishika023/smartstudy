@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Notes App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Notes App</h1>
+    </header>
+
+    <main>
+      <section id="create">
+        <h2>Create / Update Note</h2>
+        <form id="noteForm">
+          <input type="hidden" id="noteId" value="">
+          <label>Title <input id="title" required /></label>
+          <label>Content <textarea id="content" rows="5"></textarea></label>
+          <label>File <input id="file" type="file" /></label>
+          <div class="actions">
+            <button type="submit">Save</button>
+            <button type="button" id="resetBtn">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="list">
+        <h2>All Notes</h2>
+        <div id="notesContainer" class="notes-grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Made for Replit — simple notes CRUD</small>
+    </footer>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
